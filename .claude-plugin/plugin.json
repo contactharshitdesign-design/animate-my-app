@@ -1,0 +1,8 @@
+{
+  "name": "animate-my-app",
+  "description": "Turn an app design (Figma or screenshots) into a native, animated iOS app: SwiftUI for the UI, three.js for hero motion, real physics, tested on the Simulator and iPhone.",
+  "version": "1.0.0",
+  "author": { "name": "@oiharshit" },
+  "license": "MIT",
+  "keywords": ["animation", "ios", "swiftui", "threejs", "onboarding", "motion", "skill"]
+}

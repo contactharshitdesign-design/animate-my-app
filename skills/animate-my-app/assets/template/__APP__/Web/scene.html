@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: transparent; }
+  canvas { display: block; }
+</style>
+</head>
+<body>
+<script>
+  // ?debug shows script errors on screen (look-dev in the simulator's Safari inspector also works)
+  if (location.search.indexOf('debug') !== -1) {
+    window.onerror = function (m, s, l, c, e) {
+      var p = document.createElement('pre');
+      p.style.cssText = 'position:fixed;top:60px;left:8px;right:8px;font:11px monospace;color:#c00;white-space:pre-wrap;z-index:9';
+      p.textContent = m + ' @' + l + ':' + c + '\n' + (e && e.stack || '');
+      document.body.appendChild(p);
+    };
+  }
+</script>
+<script src="three.min.js"></script>
+<!-- engine first, then one script per animated part -->
+<script src="scene.js"></script>
+<script src="content.js"></script>
+</body>
+</html>

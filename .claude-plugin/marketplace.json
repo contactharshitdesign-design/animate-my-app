@@ -1,0 +1,12 @@
+{
+  "name": "animate-my-app",
+  "description": "animate-my-app: a Claude Code skill for native, physics-true app animation.",
+  "owner": { "name": "@oiharshit" },
+  "plugins": [
+    {
+      "name": "animate-my-app",
+      "source": "./",
+      "description": "Turn an app design into a native, animated iOS app (SwiftUI + three.js), tested on device."
+    }
+  ]
+}

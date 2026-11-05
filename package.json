@@ -1,0 +1,34 @@
+{
+  "name": "animate-my-app",
+  "version": "1.0.0",
+  "description": "A Claude Code skill: turn an app design into a native, animated iOS app (SwiftUI + three.js), tested on device. Run `npx animate-my-app` to install.",
+  "bin": {
+    "animate-my-app": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "README.md",
+    "LICENSE",
+    "CREDITS.md"
+  ],
+  "keywords": [
+    "claude",
+    "claude-code",
+    "skill",
+    "animation",
+    "ios",
+    "swiftui",
+    "threejs"
+  ],
+  "author": "@oiharshit",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contactharshitdesign-design/animate-my-app.git"
+  },
+  "homepage": "https://github.com/contactharshitdesign-design/animate-my-app#readme"
+}
