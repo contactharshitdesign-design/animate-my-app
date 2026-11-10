@@ -65,4 +65,4 @@ is identical on every replay.
 - SwiftUI: all UI chrome, text, buttons, list/screen transitions (`matchedGeometryEffect`, `PhaseAnimator`,
   `KeyframeAnimator`, springs). Keep text native (crisp, accessible, exact font).
 - Rive / Lottie: only when `.riv` / Lottie JSON is supplied or the part is classic 2D vector character
-  animation (load `lottie-motion-design` if installed). Rive runtime can also run in the web layer.
+  animation. Rive runtime can also run in the web layer.

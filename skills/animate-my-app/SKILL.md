@@ -13,7 +13,7 @@ description: >
 license: MIT
 metadata:
   author: "@oiharshit"
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Animate My App
@@ -22,14 +22,11 @@ Take a designed app screen (usually from Figma) and ship it as a native iOS app 
 Rive- or three.js-level piece: physical, staged, measured. Speed comes from **reusing this pipeline** (scaffold,
 engine, test scripts, recipes), not re-deriving it for every app.
 
-## 0. Before anything: optional companion skills
+## 0. Before anything: read the craft guide
 
-If these skills are installed, load them (Skill tool) at the start of a build; they raise the motion and design bar:
-`motion-design`, `apple-design`, `emil-design-eng`, `micro-interactions`.
-Add as relevant when installed: `figma-design-to-code` (required before the Figma MCP `get_design_context` tool),
-`figma-implement-motion` (Figma motion data), `figma-swiftui`, `interaction-design`, `lottie-motion-design`
-(Lottie), typography/UI polish skills.
-If none are installed, follow the rules in this skill and its references; they are self-contained.
+Read `references/craft.md` at the start of every build. It sets the bar for motion, interaction, accessibility,
+visual polish, typography, colour and Figma-to-code fidelity, and ends with the review checklist to run before
+you report. This skill is self-contained: everything it needs is in this folder.
 
 ## 1. Intake (fast), then ASK
 
@@ -68,8 +65,9 @@ swappable pieces: `references/photo-layers.md`.
 
 ## 3. Motion rules
 
-Full formulas and constants: `references/motion-physics.md`.
-- Real physics: damped springs (Apple damping/response), gravity drops, squash and stretch that **preserves
+Full formulas and constants: `references/motion-physics.md`; timing, easing, gestures and polish:
+`references/craft.md`.
+- Real physics: damped springs (damping ratio + response), gravity drops, squash and stretch that **preserves
   volume**, contact shadows that react to height.
 - Anticipation without dwell: squeeze, then stretch **and** move on the same frame; peak stretch early in the
   travel; jelly follow-through; overshoot then a braking squash. Stretch must be clearly visible.

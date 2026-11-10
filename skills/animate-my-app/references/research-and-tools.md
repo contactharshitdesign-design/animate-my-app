@@ -1,10 +1,10 @@
 # Inputs, references and generators — with fallbacks
 
 ## Figma (the usual input)
-- If installed, load `figma-design-to-code` before `get_design_context` (the Figma MCP expects it).
+- Follow the Figma-to-code steps in `craft.md` (section 12).
 - Per linked node: `get_screenshot` (ground truth), `get_design_context` (sizes, colours, fonts, effects),
   `get_metadata` (tree), `download_assets` for raster art/illustrations at the highest scale, fonts used.
-  Motion data in the file → `get_motion_context` (+ `figma-implement-motion` if installed).
+  Motion data in the file → `get_motion_context`.
 - If the Figma MCP needs auth, ask for it to be authorised via `/mcp`. Meanwhile, if the frame is open in Figma
   (desktop or browser), export via a browser/computer-use route. Ask rather than guessing from a low-res
   screenshot when exact assets matter.
@@ -87,8 +87,7 @@
 - 9:16 concept frames work well for "pick one of 4" motion directions before building.
 
 ## Rive / Lottie
-- Supplied `.riv` or Lottie JSON → use them (Rive runtime in the web layer or rive-ios; Lottie, with
-  `lottie-motion-design` if installed). Don't recreate a supplied vector animation by hand.
+- Supplied `.riv` or Lottie JSON → use them (Rive runtime in the web layer or rive-ios; lottie-ios for Lottie). Don't recreate a supplied vector animation by hand.
 
 ## When to ask (always allowed)
 - Motion intent, sequence, feel, length, sound — before building (2–4 questions).

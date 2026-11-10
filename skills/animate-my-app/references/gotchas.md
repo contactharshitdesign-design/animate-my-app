@@ -208,7 +208,7 @@ headline out of step. Rendering was fine; the gesture state machine wasn't robus
 - Paired elements (dim + card, fog + composer) must use the same animation; check both modifiers.
 - Don't animate a full-screen `.blur` behind a sheet: expensive per frame on device and reads as lag; dim alone (~22 %).
 - Switching `.preferredColorScheme` at a light→dark transition flips the status bar instantly; flip it at mid-fade.
-- **Motion tokens in SwiftUI** (Emil Kowalski's animation guidance, translated): `.spring(duration:bounce: 0)`
+- **Motion tokens in SwiftUI** (see craft.md): `.spring(duration:bounce: 0)`
   tokens; asymmetric transitions with a faster `.easeIn` removal via `.transition(.x.animation(...))`; a `Motion.x(reduceMotion) -> Animation?` helper returning nil.
   List rows: inset highlight (rounded rect, on instantly, 0.25 s fade out), not a scale.
 - **Drag to dismiss:** carry velocity with `.interpolatingSpring(duration:bounce:initialVelocity:)` where
